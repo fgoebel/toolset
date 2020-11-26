@@ -51,6 +51,7 @@ podman --version
 # define a remote DOCKER_HOST to use.
 
 RUN echo 'ALL ALL = (ALL) NOPASSWD: ALL' > /etc/sudoers.d/all
-RUN addgroup molecule -g 1000  && adduser -D -u 1000 molecule -G molecule
+RUN addgroup --gid 1000 molecule && \
+    useradd --shell /bin/bash --create-home --password '!' --gid molecule --uid 1000 molecule
 ENV SHELL /bin/bash
 
