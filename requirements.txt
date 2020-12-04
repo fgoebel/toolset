@@ -65,6 +65,7 @@ urllib3==1.25.11
 websocket-client==0.57.0
 yamllint==1.25.0
 flake8
+pyvmomi==7.0.1
 
 # The following packages are considered to be unsafe in a requirements file:
 setuptools==50.3.2
