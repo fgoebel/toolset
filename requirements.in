@@ -14,3 +14,6 @@ molecule-lxd
 molecule-podman
 molecule-openstack
 molecule-vagrant
+flake8
+pyvmomi
+pyvim
